@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Variable Processing</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let userBill = prompt("What is the bill amount?");
-        let taxedBill = userBill * 1.07;
-        let tip = taxedBill * 0.15;
-        let totalBill = taxedBill + tip;
-        alert("Your total bill is $" + totalBill.toFixed(2));
+        ///I used the consule to check the value of each variable and calculation as I went along. //
+        ///This allowed me to make sure the totals where being calculated correctly and if they wherent i would know where the issue was.
+      let userBill = prompt("What is the bill amount?");
+      console.log("User Bill: ", userBill);
+
+      let taxedBill = userBill * 1.07;
+      console.log("Taxed Bill (7% tax): ", taxedBill);
+
+      let tip = taxedBill * 0.15;
+      console.log("Tip (15% of taxed bill): ", tip);
+
+      let totalBill = taxedBill + tip;
+      console.log("Total Bill (taxed bill + tip): ", totalBill);
+
+      alert("Your total bill is $" + totalBill.toFixed(2));
     </script>
-    
-</body>
+  </body>
 </html>
