@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Processing</title>
+</head>
+<body>
+    <script>
+        let userBill = prompt("What is the bill amount?");
+        let taxedBill = userBill * 1.07;
+        let tip = taxedBill * 0.15;
+        let totalBill = taxedBill + tip;
+        alert("Your total bill is $" + totalBill.toFixed(2));
+    </script>
+    
+</body>
+</html>
